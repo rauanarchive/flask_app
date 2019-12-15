@@ -1,0 +1,17 @@
+#login to heroku
+heroku login
+#initializing a git repository
+git init
+#create a heroku application
+heroku create your-first-heroku-app --buildpack heroku/python
+#adding the remote heroku git repository
+heroku git:remote -a your-first-heroku-app
+#install gunicorn: a python server to host Flask application at heroku
+pip3 install gunicorn
+#create a requirements.txt in order for heroku to detect your as a Python project
+pip3 freeze > requirements.txt
+#adding procfile
+web: gunicorn app:app
+#now you are ready to write your first Flask programme
+
+
