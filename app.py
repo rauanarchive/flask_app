@@ -1,14 +1,16 @@
-from flask import Flask
+
+from flask import Flask, render_template
 
 rauan_url = Flask(__name__)
 
+@rauan_url.route('/about')
+def about():
+    return render_template("about.html")
+
+
 @rauan_url.route("/")
-def hello():
-    lines = [
-            "My name is Rauan Akylzhanov",
-            "I created this website to train my skills"
-            ]
-    return "\n".join(lines)
+def home():
+    return render_template("home.html")
     
 
 if __name__ == "__main__":
