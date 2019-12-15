@@ -2,7 +2,7 @@ from flask import Flask
 
 rauan_url = Flask(__name__)
 
-@app.route("/")
+@rauan_url.route("/")
 def hello():
     return "Hello World!"
 
