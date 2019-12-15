@@ -1,1 +1,1 @@
-web: gunicorn run:rauan-url
+web: gunicorn app:rauan-url
