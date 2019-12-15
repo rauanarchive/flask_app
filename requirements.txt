@@ -1,1 +1,2 @@
-flask==1.1.1
+flask==1.1.1i
+gunicorn=20.0.4
