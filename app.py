@@ -1,9 +1,9 @@
-
 from flask import Flask, render_template
 
-rauan_url = Flask(__name__)
+rauan_url = Flask(__name__,
+           template_folder="templates")
 
-@rauan_url.route('/about')
+@rauan_url.route('/')
 def about():
     return render_template("about.html")
 
@@ -14,4 +14,4 @@ def home():
     
 
 if __name__ == "__main__":
-    rauan_url.run()
+    rauan_url.run(debug=True)
