@@ -1,3 +1,5 @@
+{% extends "layout.html"%}
+{% block content %}
 You're logged in already!
 
 <form action="/login" method="POST">
@@ -5,3 +7,4 @@ You're logged in already!
 <input type="password" name="password" placeholder="Password">
 <input type="submit" value="Log in">
 </form>
+{% endblock %}
