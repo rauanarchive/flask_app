@@ -19,7 +19,7 @@ Click==7.0
 cloudpickle==1.2.2
 coloredlogs==9.0
 crypto==1.4.1
-cryptography==2.6.1
+cryptography==3.2
 cycler==0.10.0
 dask==2.8.1
 dask-kubernetes==0.10.0
